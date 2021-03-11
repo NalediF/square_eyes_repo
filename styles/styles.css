@@ -1,0 +1,14 @@
+body {
+  background: linear-gradient(#203e40, #060c0d);
+}
+
+header,
+.sign-in_home,
+main {
+  font-family: "Hero New";
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
