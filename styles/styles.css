@@ -1,5 +1,8 @@
 body {
-  background: linear-gradient(#203e40, #060c0d);
+  background-image: url(/images/background_transparent_short.png),
+    linear-gradient(#203e40, #060c0d); /*https://stackoverflow.com/questions/5681813/transparent-background-image-with-a-gradient*/
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 nav li {
