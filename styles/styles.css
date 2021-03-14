@@ -11,7 +11,7 @@ header,
 .sign-in_home,
 main,
 .footer_content {
-  font-family: "Hero New";
+  font-family: "Hero New", sans-serif;
 }
 
 header {
