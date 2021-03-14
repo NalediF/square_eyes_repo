@@ -2,13 +2,182 @@ body {
   background: linear-gradient(#203e40, #060c0d);
 }
 
+nav li {
+  /*browser ser etter en <nav> med en <li> inni*/
+  display: inline-block; /*legger alle linkene ved siden av hverandre - horisontalt*/
+}
+
 header,
 .sign-in_home,
-main {
+main,
+.footer_content {
   font-family: "Hero New";
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  align-items: center;
+}
+.logo {
+  max-width: 150px;
+}
 a {
   text-decoration: none;
-  color: white;
+  color: #f5f5f5;
+}
+.sign-in_home {
+  border: whitesmoke;
+  border: 1px solid #f5f5f5;
+  border-radius: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.sign-in_home:hover {
+  font-weight: bold;
+  background-color: #f5f5f540;
+  border: none;
+}
+h1 {
+  font-size: 10em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: lighter;
+}
+
+.welcome_content {
+  color: #f5f5f5;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+}
+.welcome_message {
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: -100px 0px -50px 0px;
+}
+
+.bold-h2 {
+  font-weight: bold;
+}
+.cta_sign-in:hover {
+  background-color: #f5f5f540;
+  border: none;
+}
+.cta_sign-up:hover {
+  border: 1.5px solid #f5f5f5;
+  background-color: transparent; /*https://stackoverflow.com/questions/14803503/unable-to-remove-css-class-a-hover-background-color/14803537*/
+}
+.footer_content {
+  font-size: 0.8em;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.cta_content {
+  color: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 200px;
+}
+
+.cta_text {
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+.cta_sign-in,
+.cta_sign-up {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 0px 80px;
+  white-space: nowrap;
+}
+
+.cta_sign-in {
+  border: whitesmoke;
+  border: 1.5px solid #f5f5f5;
+}
+
+.cta_sign-up {
+  background-color: #f5f5f540; /*de siste tallene = opacity (%?)*/
+}
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 8em;
+  }
+  .welcom {
+    margin: 0 50px;
+  }
+  .welcome_message {
+    font-size: 0.8em;
+  }
+
+  .cta_content {
+    flex: 50%;
+
+    justify-content: space-around;
+    align-items: center;
+    padding: 150px;
+  }
+  .cta_sign-in,
+  .cta_sign-up {
+    white-space: nowrap; /*https://developer.mozilla.org/en-US/docs/Web/CSS/white-space*/
+    display: inline-block;
+    font-size: 1em;
+    padding: 10px 30px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 4em;
+  }
+  header {
+    margin: 0 -40px;
+  }
+  .sign-in_home {
+    font-size: 0.8em;
+  }
+  .welcome_message {
+    font-size: 0.8em;
+    margin: 80px;
+    text-align: center;
+    margin: -50px 0;
+  }
+
+  .cta_content {
+    justify-content: space-around;
+    align-items: center;
+    padding: 150px;
+    margin: -50px 0;
+  }
+  .cta_sign-in,
+  .cta_sign-up {
+    white-space: nowrap;
+
+    font-size: 1em;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin: 0 30px;
+  }
+
+  .footer_content {
+    white-space: nowrap;
+    font-size: 0.6em;
+    margin: 10 -50px;
+  }
 }
