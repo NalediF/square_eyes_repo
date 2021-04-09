@@ -9,7 +9,7 @@
     <link href="styles/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.typekit.net/svj5xjm.css" />
   </head>
-  <body class="index">
+  <body>
     <header>
       <a href="index.html">
         <img src="images/square_eyes_logo_neg.png" class="logo"
@@ -18,26 +18,33 @@
       <nav>
         <ul>
           <!-- SEARCH-ICON til andre sider: <i class="fas fa-search"></i> -->
-          <li><a href="sign-in.html" class="sign-in_home"> sign in </a></li>
+          <li><a href="index.html" class="back"> back </a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="welcome_content">
-        <h1 class="welcome">welcome</h1>
-        <div class="welcome_message">
-          <h2>
-            to your number one provider of independent movies.
-            <div class="bold-h2">connecting film lovers.</div>
-          </h2>
-        </div>
-      </section>
-      <section class="cta_content">
-        <a href="sign-in.html" class="cta_sign-in">sign in</a>
+        <h1 class="welcome">sign in</h1>
+     
+      <form action="form-success.php" method="POST">
+        <!--forteller hvor skjemaet sendes-->
 
-        <p class="cta_text">or</p>
-        <a href="sign-up.html" class="cta_sign-up">sign up</a>
-      </section>
+        <fieldset class="input-text">
+          <!--grupperer skjemaet samen-->
+          <legend>Your details</legend>
+          <label for="name">Your first and last name</label>
+          <input type="name" name="name" id="name" class="form__input"> </input>
+         
+          
+          <label for="e-mail"> Your e-mail</label>
+          <input type="tel" name="email" id="email" class="form__input">
+        </fieldset>
+       <a href="catalogue.html"> <input type="submit" value="sign in" class="submit"></a>
+      </form>
+
+
+</section>
+    
     </main>
     <footer>
       <nav>
