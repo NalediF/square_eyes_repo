@@ -1,13 +1,18 @@
-body {
+.index {
   background-image: url(/images/background_transparent_short.png),
     linear-gradient(#203e40, #060c0d); /*https://stackoverflow.com/questions/5681813/transparent-background-image-with-a-gradient*/
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+body {
+  background: linear-gradient(#203e40, #060c0d);
+}
 nav li {
   /*browser ser etter en <nav> med en <li> inni*/
   display: inline-block; /*legger alle linkene ved siden av hverandre - horisontalt*/
+  margin-left: 100px;
+  color: whitesmoke;
 }
 
 header,
@@ -53,10 +58,15 @@ h1 {
 }
 
 h2 {
-  font-weight: lighter;
+  font-weight: bold;
   color: white;
+  text-transform: uppercase;
+  font-size: 2em;
 }
 
+h3 {
+  font-weight: bold;
+}
 .welcome_content {
   color: #f5f5f5;
   margin-top: -150px;
@@ -89,7 +99,9 @@ h2 {
   font-size: 0.8em;
   display: flex;
   justify-content: space-around;
-  padding: 50px;
+  padding: 10px;
+
+  margin: 100px 101px 100px 0px;
 }
 
 .cta_content {
@@ -167,33 +179,6 @@ input {
   display: block;
   padding: 10px;
 }
-/*
-.submit {
-  /*teksten inne i boksen
-  display: flex;
-  white-space: nowrap;
-  
-  font-size: 30px;
-  margin-top: -50px;
-  
-  font-size: 1em;
-  
-  border-radius: 10px;
-  margin: 0 30px;
-  
-  border: 1px solid #f5f5f5;
-  border-radius: 10px;
-  padding: 5px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.submit:hover {
-  border-color: white;
-  background-color: #f5f5f540;
-  border: none;
-  color:white;
-} */
 
 .submit {
   border: whitesmoke;
@@ -204,13 +189,15 @@ input {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1em;
-  background: none; /*bakgrunnen til knappen*/
+  background-color: #f5f5f540;
+  border-color: #f5f5f500;
 }
 .submit:hover {
   color: whitesmoke;
   font-weight: bold;
-  background-color: #f5f5f540;
-  border-color: #f5f5f500;
+  background: none;
+  border: 1px solid #f5f5f5;
+  /*bakgrunnen til knappen*/
 }
 /* FOR SIGN UP ONLY*/
 
@@ -231,8 +218,10 @@ input {
   margin-right: auto;
 }
 
-.h1_create-account {
+.h1_create-account,
+.h1_search {
   display: flex;
+
   justify-content: center;
   text-align: center;
   margin: 0px 0px -50px 0px;
@@ -242,10 +231,134 @@ input {
   text-transform: lowercase;
   font-size: 5em;
   margin: 0 auto;
+  font-weight: thin;
 }
+
 /*gjør skjemaet vertikalt - må skrives inn bak alle elementene som skal gå nedover*/
 
+/*FOR ACCOUNT PAGES ONLY*/
+
+.my_account {
+  border-top: whitesmoke;
+  border-radius: 10px;
+  font-size: 5em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.h1_light {
+  font-weight: 100;
+  color: yellowgreen;
+}
+
+.account-details {
+  display: flex;
+  justify-content: center;
+}
+
+.published_movies_info {
+  display: flex;
+}
+
+.published_movies_dates {
+  margin-top: 53px;
+}
+
+.vertical_line {
+  width: 1px;
+  float: left;
+  background-color: whitesmoke;
+  margin: 20px 100px;
+}
+
+.streams_left_number {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 75px;
+  margin-left: 45px;
+}
+
+.cta_buy_more_streams {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 20px;
+  white-space: nowrap;
+  background: transparent;
+  border: 1.5px solid transparent;
+  background-color: #f5f5f540;
+  margin-left: 820px;
+  margin-top: -250px;
+  margin-bottom: 310px;
+  max-width: 15%;
+}
+
+.cta_buy_more_streams:hover {
+  border: whitesmoke;
+  border: 1.5px solid #f5f5f5;
+  background: transparent;
+}
+.cta_change_account {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 100px 80px;
+  margin-top: -70px;
+  white-space: nowrap;
+  border: whitesmoke;
+  border: 1.5px solid #f5f5f5;
+  background: transparent;
+}
+
+.cta_change_account:hover {
+  border: 1.5px solid transparent;
+  background-color: #f5f5f540;
+}
+
+.change_between_accounts {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.background_behind {
+  border: whitesmoke;
+  color: whitesmoke;
+  border: 1px solid #f5f5f5;
+  border-radius: 20px;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: thin;
+  font-size: 1em;
+  background: none; /*bakgrunnen til knappen*/
+}
+
+/*FOR SEARCH PAGE ONLY*/
+
+.form_search {
+  /* display: flex;*/
+
+  margin-top: -50px;
+  color: white;
+  text-transform: lowercase;
+  font-size: 1em;
+  margin-bottom: 200px;
+}
+
+.search_form {
+  margin-top: 50px;
+}
+
 /*SMALLER SCREENS*/
+
+/* general*/
 @media screen and (max-width: 900px) {
   h1 {
     font-size: 7em;
@@ -274,8 +387,101 @@ input {
     padding: 10px 30px;
     border-radius: 20px;
   }
+
+  /*account pages*/
+  .my_account {
+    border-top: whitesmoke;
+    border-radius: 10px;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .h1_light {
+    font-weight: 100;
+    color: whitesmoke;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+  .account-details {
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+  }
+
+  .published_movies_info {
+    display: flex;
+  }
+
+  .published_movies_dates {
+    margin-top: 83px;
+    margin-left: -100px;
+  }
+
+  .vertical_line {
+    width: 1px;
+    float: left;
+    background-color: whitesmoke;
+    margin: 20px 80px;
+  }
 }
 
+@media screen and (max-width: 750px) {
+  /*account pages*/
+  .my_account {
+    border-top: whitesmoke;
+    border-radius: 10px;
+    font-size: 3.3em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .h1_light {
+    font-weight: 100;
+    color: whitesmoke;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+  .account-details {
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+  }
+
+  .published_movies_info {
+    display: flex;
+  }
+
+  .published_movies_dates {
+    margin: 57px -50px;
+  }
+
+  .personal_info {
+    margin-left: -100px;
+    margin-right: 70px;
+  }
+
+  .vertical_line {
+    display: none;
+  }
+}
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 4em;
@@ -312,7 +518,64 @@ input {
   .footer_content {
     white-space: nowrap;
     font-size: 0.6em;
-    margin: 10 -50px;
+    margin: -50px;
+  }
+  .my_account {
+    border-top: whitesmoke;
+    border-radius: 10px;
+    font-size: 3.3em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /*account*/
+
+  .my_account {
+    border-top: whitesmoke;
+    border-radius: 10px;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .h1_light {
+    font-weight: 100;
+    color: whitesmoke;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+  .account-details {
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+  }
+
+  .published_movies_info {
+    display: flex;
+  }
+
+  .published_movies_dates {
+    margin: 57px -50px;
+  }
+
+  .personal_info {
+    margin-left: -100px;
+    margin-right: 70px;
+  }
+
+  .vertical_line {
+    display: none;
   }
 }
 
