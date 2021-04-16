@@ -7,12 +7,15 @@
 
 body {
   background: linear-gradient(#203e40, #060c0d);
+  overflow-x: hidden;
 }
-nav li {
-  /*browser ser etter en <nav> med en <li> inni*/
-  display: inline-block; /*legger alle linkene ved siden av hverandre - horisontalt*/
-  margin-left: 100px;
+a {
+  text-decoration: none;
   color: whitesmoke;
+}
+
+a:active {
+  font-weight: bold;
 }
 
 header,
@@ -29,12 +32,16 @@ header {
   padding: 50px;
   align-items: center;
 }
+
 .logo {
-  max-width: 150px;
+  max-width: 100px;
+  margin: 0px;
 }
-a {
-  text-decoration: none;
-  color: #f5f5f5;
+
+nav li {
+  /*browser ser etter en <nav> med en <li> inni*/
+  display: inline-block; /*legger alle linkene ved siden av hverandre - horisontalt*/
+  margin-left: 100px;
 }
 .sign-in_home,
 .back {
@@ -55,12 +62,14 @@ h1 {
   font-size: 10em;
   text-transform: uppercase;
   color: white;
+  display: flex;
+  justify-content: center;
 }
 
 h2 {
-  font-weight: bold;
+  font-weight: 100;
   color: white;
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-size: 2em;
 }
 
@@ -175,6 +184,16 @@ input {
   color: whitesmoke;
 }
 
+.type_account {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 90px;
+  color: black;
+  text-transform: lowercase;
+  font-size: 1em;
+}
+
 .form__input {
   display: block;
   padding: 10px;
@@ -209,8 +228,13 @@ input {
   font-size: 1em;
 }
 
+label {
+  color: whitesmoke;
+}
+
 .create_account {
   margin-top: 20px;
+  color: whitesmoke;
 }
 .form_sign-in {
   display: block;
@@ -355,21 +379,109 @@ input {
 .search_form {
   margin-top: 50px;
 }
+/*catalogue*/
+
+.featured_movie-section {
+  background-color: #f5f5f540;
+  width: 1250px;
+  height: 350px;
+}
+
+.featured_movie {
+  display: flex;
+  justify-content: left;
+  margin-left: 50px;
+  align-items: flex-end;
+}
+
+.title_placeholder-text {
+  font-size: 4em;
+  margin-top: 250px;
+  color: whitesmoke;
+}
+.film-catalogue {
+  margin-top: 100px;
+}
+.placeholder_card {
+  background-color: #f5f5f540;
+  width: 150px;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: end;
+}
+.placeholder_text {
+  color: tomato;
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+i {
+  /*HEART from https://fontawesome.com/icons/heart?style=solid*/
+  color: teal;
+  display: flex;
+  justify-content: top;
+}
+
+.placeholder-row_01,
+.placeholder-row_02,
+.placeholder-row_03 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.placeholder-row_03 {
+  margin-left: -10px;
+}
+
+.h2_film {
+  display: flex;
+  justify-content: left;
+  margin-left: 215px;
+  margin-bottom: -50px;
+}
+.arrow-left,
+.arrow-right {
+  font-size: 100px;
+  font-weight: 100;
+  color: whitesmoke;
+}
 
 /*SMALLER SCREENS*/
 
 /* general*/
 @media screen and (max-width: 900px) {
+  nav ul li a {
+    color: whitesmoke;
+    font-size: 0.7em;
+    display: flex;
+    flex: auto;
+    /* margin-left: -35px; */
+  }
+
   h1 {
-    font-size: 7em;
+    font-size: 6em;
     margin-bottom: 150px;
     text-align: center;
   }
   .welcome {
     margin: 0 50px;
+    margin: 200px;
   }
   .welcome_message {
     font-size: 0.8em;
+  }
+
+  .welcome_text {
+    color: whitesmoke;
   }
 
   .cta_content {
@@ -431,6 +543,55 @@ input {
     background-color: whitesmoke;
     margin: 20px 80px;
   }
+  .footer_content {
+    font-size: 1.2em;
+  }
+  /*CATLOGUE*/
+
+  .featured_movie-section {
+    background-color: #f5f5f540;
+    width: 900px;
+    height: 350px;
+  }
+
+  .title_placeholder-text {
+    font-size: 3em;
+    margin-top: 250px;
+  }
+  .film-catalogue {
+    margin-top: 100px;
+  }
+
+  .placeholder_card {
+    width: 100px;
+    height: 200px;
+    border-radius: 10px;
+  }
+  .placeholder-row_01,
+  .placeholder-row_02,
+  .placeholder-row_03 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  .placeholder-row_03 {
+    margin-left: -10px;
+  }
+
+  .h2_film {
+    display: flex;
+    justify-content: left;
+    margin-left: 95px;
+    margin-bottom: -50px;
+  }
+  .arrow-left,
+  .arrow-right {
+    font-size: 100px;
+    font-weight: 100;
+    color: whitesmoke;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -477,9 +638,59 @@ input {
     margin-left: -100px;
     margin-right: 70px;
   }
+  .placeholder_card {
+    background-color: #f5f5f540;
+    height: 190px;
+    width: 80px;
 
-  .vertical_line {
-    display: none;
+    border-radius: 8px;
+  }
+  .placeholder-row_01,
+  .placeholder-row_02,
+  .placeholder-row_03 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+
+    margin-bottom: 100px;
+  }
+  .placeholder-row_03 {
+    margin-left: -10px;
+  }
+
+  .placeholder_card {
+    /*froggy-spillet*/
+    color: #f5f5f540;
+
+    font-size: 0.8em;
+  }
+  .h2_film {
+    display: flex;
+    justify-content: left;
+
+    margin-left: 90px;
+    margin-bottom: 30px;
+  }
+  .arrow-left,
+  .arrow-right {
+    font-size: 50px;
+    font-weight: 100;
+    color: whitesmoke;
+  }
+
+  /*catalogue*/
+
+  .featured_movie-section {
+    width: 750px;
+    height: 350px;
+  }
+
+  .title_placeholder-text {
+    font-size: 2.5em;
+    margin-top: 250px;
+  }
+  .film-catalogue {
+    margin-top: 100px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -495,16 +706,17 @@ input {
   }
   .welcome_message {
     font-size: 0.8em;
-    margin: 80px;
+    margin: -170px;
+
     text-align: center;
-    margin: -100px 0;
   }
 
   .cta_content {
     justify-content: space-around;
     align-items: center;
     padding: 150px;
-    margin: -50px 0;
+    margin: 100px 0;
+    margin-bottom: 100px;
   }
   .cta_sign-in,
   .cta_sign-up {
@@ -515,20 +727,9 @@ input {
     margin: 0 30px;
   }
 
-  .footer_content {
-    white-space: nowrap;
-    font-size: 0.6em;
-    margin: -50px;
+  li {
+    padding: 0px;
   }
-  .my_account {
-    border-top: whitesmoke;
-    border-radius: 10px;
-    font-size: 3.3em;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-
   /*account*/
 
   .my_account {
@@ -545,7 +746,11 @@ input {
     color: whitesmoke;
   }
   h2 {
-    font-size: 1.5em;
+    font-size: 1em;
+  }
+
+  .h2_create-account {
+    font-size: 2.4em;
   }
 
   h3 {
@@ -574,13 +779,72 @@ input {
     margin-right: 70px;
   }
 
-  .vertical_line {
-    display: none;
+  /*SIGN IN*/
+
+  .welcome_sign-in {
+    font-size: 3em;
+    margin-top: 160px;
+
+    margin-bottom: 110px;
+  }
+  .input-text {
+    margin-bottom: -10px;
+  }
+  .submit {
+    margin-bottom: 50px;
+  }
+  /*catalogue*/
+  .placeholder_card {
+    background-color: #f5f5f540;
+    width: 80px;
+    height: 180px;
+    border-radius: 10px;
+  }
+  .placeholder-row_01,
+  .placeholder-row_02,
+  .placeholder-row_03 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  .placeholder-row_03 {
+    margin-left: -10px;
+  }
+
+  .title_placeholder-text {
+    font-size: 1.5em;
+    margin-top: 120px;
+    color: whitesmoke;
+  }
+  .featured_movie-section {
+    width: 750px;
+    height: 200px;
+  }
+  .h2_film {
+    display: flex;
+    justify-content: left;
+    margin-left: 80px;
+    margin-bottom: -50px;
+    font-size: 2em;
+  }
+  .arrow-left,
+  .arrow-right {
+    font-size: 100px;
+    font-weight: 100;
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 450px) {
   .welcome_message {
     margin: -150px 10px 100px;
+  }
+
+  .h2_film {
+    margin-left: 30px;
+    margin-bottom: -70px;
+    font-size: 1.5em;
+    margin-top: -50px;
   }
 }
