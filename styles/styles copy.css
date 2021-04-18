@@ -5,62 +5,20 @@
   background-repeat: no-repeat;
 }
 
-header {
-  background-color: turquoise;
-  min-height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin: 0 40px;
-}
 body {
-  /*fra iphone-siden*/
   background: linear-gradient(#203e40, #060c0d);
   overflow-x: hidden;
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  font-family: "Hero New", sans-serif;
 }
 nav {
   width: 100%;
   margin: 20px 0;
-  display: flex;
-  justify-content: space-between;
 }
 
-.nav_header {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
 nav ul {
-  padding: 0px;
-}
-
-nav li {
-  text-decoration: none;
-  display: inline-block;
-  margin-left: 100px;
-  background-color: violet;
-}
-
-nav a {
-  text-decoration: none;
-  color: whitesmoke;
-  padding: 10px;
-  display: block;
-}
-.footer_content {
-  font-size: 1em;
-  font-family: "Hero New", sans-serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-
-  margin: 100px 101px 100px 0px;
+  width: 100%;
 }
 
 a {
@@ -72,20 +30,31 @@ a:active {
   font-weight: bold;
 }
 
-/*
+header,
+.sign-in_home,
+.back,
+main,
+.footer_content {
+  font-family: "Hero New", sans-serif;
+}
+
 header {
-  
+  display: flex;
+  justify-content: space-between;
   padding: 50px;
-  
-  min-height: 100px;
- 
-} */
+  align-items: center;
+}
 
 .logo {
   max-width: 100px;
   margin: 0px;
 }
 
+nav li {
+  /*browser ser etter en <nav> med en <li> inni*/
+  display: inline-block; /*legger alle linkene ved siden av hverandre - horisontalt*/
+  margin-left: 100px;
+}
 .sign-in_home,
 .back {
   border: whitesmoke;
@@ -102,9 +71,7 @@ header {
   border: none;
 }
 h1 {
-  margin-top: 250px;
-  margin-bottom: 200px;
-  font-size: 7em;
+  font-size: 10em;
   text-transform: uppercase;
   color: white;
   display: flex;
@@ -148,6 +115,21 @@ h3 {
   border: 1.5px solid #f5f5f5;
   background-color: transparent; /*https://stackoverflow.com/questions/14803503/unable-to-remove-css-class-a-hover-background-color/14803537*/
 }
+.footer_content {
+  font-size: 0.8em;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+
+  margin: 100px 101px 100px 0px;
+}
+.footer_content {
+  font-size: 0.8em;
+  display: flex;
+  justify-content: space-around;
+
+  margin: 100px 101px 100px 0px;
+}
 
 /* https://css-tricks.com/keep-margins-out-of-link-lists/ */
 
@@ -166,7 +148,7 @@ ul a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px;
+  padding: 200px;
 }
 
 .cta_text {
@@ -198,6 +180,10 @@ legend {
   display: none; /*skjuler legend - teksten som trengs for synshemmede*/
 }
 
+fieldset {
+  margin-top: -100px;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -209,7 +195,6 @@ form {
 fieldset {
   /*border around the form https://forums.modx.com/thread/47171/how-to-remove-this-border-around-the-form*/
   border-style: none;
-  margin-top: -100px;
 }
 
 .submit_sign-in {
@@ -233,13 +218,10 @@ input {
   display: flex;
   justify-content: center;
   margin-top: 50px;
-  text-align: center;
-  margin-left: 70px;
+  margin-left: 90px;
   color: black;
   text-transform: lowercase;
   font-size: 1em;
-  height: 50px;
-  width: 150px;
 }
 
 .form__input {
@@ -250,14 +232,14 @@ input {
 .submit {
   border: whitesmoke;
   color: whitesmoke;
-
+  border: 1px solid #f5f5f5;
   border-radius: 20px;
   padding: 15px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1em;
   background-color: #f5f5f540;
-  margin-top: 50px;
+  border-color: #f5f5f500;
 }
 .submit:hover {
   color: whitesmoke;
@@ -317,8 +299,6 @@ label {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
 }
 
 .h1_light {
@@ -331,7 +311,21 @@ label {
   justify-content: center;
 }
 
-.my_personal_info {
+.published_movies_info {
+  display: flex;
+}
+
+.published_movies_dates {
+  margin-top: 53px;
+}
+
+.vertical_line {
+  width: 1px;
+  float: left;
+  background-color: whitesmoke;
+  margin: 20px 100px;
+}
+.my_streams {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -365,17 +359,7 @@ label {
 
   flex-direction: row;
 }
-/*producer*/
-.name_of_movie {
-  font-size: 1.3em;
-  font-weight: bold;
-}
-.published_dates {
-  font-style: italic;
-  font-size: 0.999em;
-  margin-top: -20px;
-  color: rgba(245, 245, 245, 0.495);
-}
+
 .pay_thin {
   font-weight: 100;
 }
@@ -386,7 +370,7 @@ label {
 .pay_per_view {
   display: flex;
   flex-direction: row;
-  margin-top: -200px;
+  margin-top: -100px;
 }
 
 .pay_one,
@@ -428,8 +412,7 @@ label {
   margin-bottom: 310px;
   max-width: 15%;
 } */
-.cta_buy_more_streams,
-.cta_publish_more {
+.cta_buy_more_streams {
   display: flex;
   justify-content: center;
   font-size: 1em;
@@ -440,8 +423,6 @@ label {
   white-space: nowrap;
   border: 1.5px solid transparent;
   background-color: #f5f5f540;
-  margin-bottom: 60px;
-  margin-top: 30px;
 }
 
 .cta_buy_more_streams:hover {
@@ -451,8 +432,7 @@ label {
 }
 
 .change_account {
-  margin-top: 80px;
-  margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 .cta_change_account {
@@ -509,12 +489,10 @@ label {
   margin-top: 50px;
 }
 /*catalogue*/
-.h1_pay {
-  font-size: 7em;
-}
+
 .featured_movie-section {
   background-color: #f5f5f540;
-  width: 100%;
+  width: 1250px;
   height: 350px;
 }
 
@@ -553,6 +531,8 @@ label {
 .h2_film {
   display: flex;
   justify-content: left;
+  margin-left: 300px;
+  margin-bottom: 0px;
 }
 
 .placeholder_text {
@@ -563,6 +543,7 @@ label {
 
 i {
   /*HEART from https://fontawesome.com/icons/heart?style=solid*/
+
   display: flex;
   margin-bottom: 200px;
   margin-left: 100px;
@@ -704,7 +685,7 @@ i {
 
   .featured_movie-section {
     background-color: #f5f5f540;
-
+    width: 900px;
     height: 350px;
   }
 
@@ -870,6 +851,7 @@ i {
   /*catalogue*/
 
   .featured_movie-section {
+    width: 750px;
     height: 350px;
   }
 
@@ -900,7 +882,9 @@ i {
   h1 {
     font-size: 4em;
   }
-
+  header {
+    margin: 0 -40px;
+  }
   .sign-in_home,
   .back {
     font-size: 0.8em;
@@ -1016,6 +1000,7 @@ i {
     color: whitesmoke;
   }
   .featured_movie-section {
+    width: 750px;
     height: 200px;
   }
   .h2_film {
@@ -1057,15 +1042,6 @@ i {
 @media screen and (max-width: 450px) {
   .welcome_message {
     margin: -150px 10px 100px;
-  }
-
-  .cta_content {
-    justify-content: space-around;
-    align-items: center;
-    padding: 150px;
-    margin: 100px 0;
-    margin-bottom: 10px;
-    margin-top: -100px;
   }
 
   .h2_film {
@@ -1112,12 +1088,5 @@ i {
     padding-left: 20px;
     padding-right: 20px;
     margin: 100px 5px;
-  }
-
-  .personal_info,
-  .h2_streams,
-  .streams_left,
-  .my_movies {
-    margin-left: 100px;
   }
 }

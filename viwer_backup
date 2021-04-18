@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Square Eyes - Home - Viewer</title>
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/svj5xjm.css" />
+    <script
+      src="https://kit.fontawesome.com/9e33fa4934.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--FONT AWESOME-->
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="images/square_eyes_logo_neg.png" class="logo" />
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="pay_per_view.html"> buy streams</a></li>
+          
+          <li><a href="catalogue.html">films</a></li>
+          <li><a href="home.html">home</a></li>
+
+          <li> <a href="search.html"><i class="fas fa-search"></i></a</li><!-- https://fontawesome.com/icons/search?style=solid-->
+          <li> <a href="home.html"><i class="fas fa-cog"></i></a</li> <!-- https://fontawesome.com/icons/cog?style=solid-->
+          <li> <a href="index.html">sign out</li> <!-- https://fontawesome.com/icons/sign-out-alt?style=solid-->
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        
+        <h1 class="my_account">My Viewer Account </h1>
+
+       
+        <section class="account-details">
+
+             <div class="personal_info">
+                    <h2>personal information</h2>
+                        <h3 >name</h3>
+                        <p class="background_behind">Ola Nordmann</p>
+                        <h3>create a new password</h3>
+                        <div class="background_behind">**********</div>
+                        <h3>change your phone number</h3>
+                        <p class="background_behind">+47 123 45 678</p>
+             </div>
+             <div class="vertical_line"></div>
+
+                     
+                  
+    <div class="streams_left">
+        <h2>my streams</h2>
+        <h3>streams left in pack</h3>
+        
+
+       
+    </div>
+
+
+     <div class="streams_left_number">05</div>
+      
+
+
+        </section>
+        <section class="cta_buy_more_streams">
+              <a href="pay_per_view.html" class="!!!!!">Buy more streams</a>
+        </section>
+
+        <section class="change_between_accounts">
+        
+              <a href="home_producer.html" class="cta_change_account">Change to producer account</a>
+   
+        </section>
+    </main>
+  <footer>
+        <nav>
+          <ul class="footer_content">
+            <li>
+              <a href="faq.html" class="footer-faq"> faq </a>
+            </li>
+            <li>
+              <a href="help.html" class="footer-help"> help</a>
+            </li>
+            <li>
+              <a href="your-account.html" class="footer-your-account">
+                account
+              </a>
+            </li>
+            <li>
+              <a href="terms-of-use.html" class="footer-terms">
+                terms
+              </a>
+            </li>
+            <li>
+              <a href="contact.html" class="footer-contact"> contact </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+  </body>
+</html>
