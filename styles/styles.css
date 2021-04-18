@@ -10,9 +10,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin: 0 40px;
 }
+
 body {
   /*fra iphone-siden*/
   background: linear-gradient(#203e40, #060c0d);
@@ -22,6 +22,7 @@ body {
   margin: 0 auto;
   font-family: "Hero New", sans-serif;
 }
+
 nav {
   width: 100%;
   margin: 20px 0;
@@ -34,6 +35,7 @@ nav {
   justify-content: right;
   align-items: center;
 }
+
 nav ul {
   padding: 0px;
 }
@@ -50,6 +52,7 @@ nav a {
   padding: 10px;
   display: block;
 }
+
 .footer_content {
   font-size: 1em;
   font-family: "Hero New", sans-serif;
@@ -84,12 +87,14 @@ a:active {
   text-transform: uppercase;
   font-weight: bold;
 }
+
 .sign-in_home:hover,
 .back:hover {
   font-weight: bold;
   background-color: #f5f5f540;
   border: none;
 }
+
 h1 {
   margin-top: 250px;
   margin-bottom: 200px;
@@ -118,6 +123,7 @@ h3 {
   display: flex;
   justify-content: center;
 }
+
 .welcome_message {
   font-size: 1em;
   display: flex;
@@ -133,6 +139,7 @@ h3 {
   background-color: #f5f5f540;
   border-color: #f5f5f500;
 }
+
 .cta_sign-up:hover {
   border: 1.5px solid #f5f5f5;
   background-color: transparent; /*https://stackoverflow.com/questions/14803503/unable-to-remove-css-class-a-hover-background-color/14803537*/
@@ -162,6 +169,7 @@ ul a {
   font-size: 1.5em;
   font-weight: lighter;
 }
+
 .cta_sign-in,
 .cta_sign-up {
   font-size: 2em;
@@ -209,6 +217,7 @@ fieldset {
   color: white;
   text-transform: lowercase;
 }
+
 input {
   border: 1px solid whitesmoke;
   border-radius: 20px;
@@ -248,12 +257,14 @@ input {
   background-color: #f5f5f540;
   margin-top: 50px;
 }
+
 .submit:hover {
   color: whitesmoke;
   font-weight: bold;
   background: none;
   border: 1px solid #f5f5f5;
 }
+
 /* FOR SIGN UP ONLY*/
 
 .forms_create-account {
@@ -281,7 +292,6 @@ label {
 .h1_create-account,
 .h1_search {
   display: flex;
-
   justify-content: center;
   text-align: center;
   margin: 0px 0px -50px 0px;
@@ -325,10 +335,6 @@ label {
   margin-top: -50px;
 }
 
-.background_behind {
-  margin-bottom: 50px;
-}
-
 .streams_left_number {
   font-weight: bold;
   font-size: 3em;
@@ -345,11 +351,10 @@ label {
   display: flex;
   height: 80px;
   width: 250px;
-
   align-items: center;
-
   flex-direction: row;
 }
+
 /*producer*/
 .name_of_movie {
   font-size: 1.3em;
@@ -431,7 +436,6 @@ label {
   margin: 100px 80px;
   margin-top: -70px;
   white-space: nowrap;
-
   background-color: #f5f5f540;
 }
 
@@ -458,6 +462,7 @@ label {
   font-weight: thin;
   font-size: 1em;
   background: none;
+  margin-bottom: 50px;
 }
 
 /*FOR SEARCH PAGE ONLY*/
@@ -473,11 +478,13 @@ label {
 .search_form {
   margin-top: 50px;
 }
+
 /*catalogue*/
 .h1_pay {
   font-size: 7em;
   margin-top: 100px;
 }
+
 .featured_movie-section {
   background-color: #f5f5f540;
   width: 100%;
@@ -496,9 +503,11 @@ label {
   margin-top: 250px;
   color: whitesmoke;
 }
+
 .film-catalogue {
   margin-top: 100px;
 }
+
 .placeholder_card {
   background-color: #f5f5f540;
   width: 150px;
@@ -516,6 +525,7 @@ label {
   background-color: transparent;
   padding: 0px;
 }
+
 .h2_film {
   display: flex;
   justify-content: left;
@@ -544,6 +554,7 @@ i {
   align-items: center;
   margin-bottom: 100px;
 }
+
 .placeholder-row_03 {
   margin-left: -10px;
 }
@@ -580,7 +591,6 @@ i {
     font-size: 0.7em;
     display: flex;
     flex: auto;
-    /* margin-left: -35px; */
   }
 
   h1 {
@@ -592,6 +602,7 @@ i {
     margin: 0 50px;
     margin: 200px;
   }
+
   .welcome_message {
     font-size: 0.8em;
   }
@@ -607,6 +618,7 @@ i {
     align-items: center;
     padding: 150px;
   }
+
   .cta_sign-in,
   .cta_sign-up {
     white-space: nowrap; /*https://developer.mozilla.org/en-US/docs/Web/CSS/white-space*/
@@ -618,12 +630,7 @@ i {
 
   /*account pages*/
   .my_account {
-    border-top: whitesmoke;
-    border-radius: 10px;
     font-size: 4em;
-    display: flex;
-    justify-content: center;
-    text-align: center;
   }
 
   .h1_light {
@@ -638,6 +645,7 @@ i {
   p {
     font-size: 0.9em;
   }
+
   .account-details {
     display: flex;
     justify-content: center;
@@ -653,12 +661,6 @@ i {
     margin-left: -100px;
   }
 
-  .vertical_line {
-    width: 1px;
-    float: left;
-    background-color: whitesmoke;
-    margin: 20px 80px;
-  }
   .footer_content {
     font-size: 1.2em;
   }
@@ -666,6 +668,7 @@ i {
   .personal_info {
     margin-top: -50px;
   }
+
   /*CATLOGUE*/
 
   .featured_movie-section {
@@ -686,18 +689,6 @@ i {
     width: 100px;
     height: 200px;
     border-radius: 10px;
-  }
-  .placeholder-row_01,
-  .placeholder-row_02,
-  .placeholder-row_03 {
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 100px;
-  }
-  .placeholder-row_03 {
-    margin-left: -10px;
   }
 
   .h2_film {
@@ -727,20 +718,6 @@ i {
   }
 
   /*pay per view*/
-  .h1_pay {
-    font-size: 7em;
-    margin-bottom: 50px;
-  }
-
-  .pay_five,
-  .pay_one,
-  .pay_ten {
-    height: 150px;
-    width: 150px;
-    font-size: 1em;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 
   .h1_pay {
     margin: 50px;
@@ -775,9 +752,8 @@ i {
   p {
     font-size: 0.9em;
   }
-  .account-details {
-    /*sjekk*/
 
+  .account-details {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -800,29 +776,12 @@ i {
 
   .placeholder_card {
     background-color: #f5f5f540;
-    height: 190px;
-    width: 80px;
-
     border-radius: 8px;
-  }
-  .placeholder-row_01,
-  .placeholder-row_02,
-  .placeholder-row_03 {
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-
-    margin-bottom: 100px;
-  }
-  .placeholder-row_03 {
-    margin-left: -10px;
-  }
-
-  .placeholder_card {
     font-size: 0.9em;
     height: 200px;
     width: 100px;
   }
+
   .h2_film {
     display: flex;
     justify-content: left;
@@ -830,6 +789,7 @@ i {
     margin-left: 90px;
     margin-bottom: 30px;
   }
+
   .arrow-left,
   .arrow-right {
     font-size: 50px;
@@ -856,17 +816,8 @@ i {
     font-size: 5em;
     margin-bottom: 150px;
   }
-  .pay_five,
-  .pay_one,
-  .pay_ten {
-    height: 150px;
-    width: 150px;
-    font-size: 1em;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 100px 20px;
-  }
 }
+
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 4em;
@@ -890,6 +841,7 @@ i {
     margin: 100px 0;
     margin-bottom: 100px;
   }
+
   .cta_sign-in,
   .cta_sign-up {
     white-space: nowrap;
@@ -917,6 +869,7 @@ i {
     font-weight: 100;
     color: whitesmoke;
   }
+
   h2 {
     font-size: 1em;
   }
@@ -932,6 +885,7 @@ i {
   p {
     font-size: 0.9em;
   }
+
   .account-details {
     display: flex;
     justify-content: center;
@@ -946,40 +900,23 @@ i {
     margin: 57px -50px;
   }
 
-  .personal_info {
-    margin-left: -100px;
-    margin-right: 70px;
-    margin-top: -50px;
-  }
-
   /*SIGN IN*/
 
   .welcome_sign-in {
     font-size: 3em;
     margin-top: 160px;
-
     margin-bottom: 110px;
   }
+
   .input-text {
     margin-bottom: -10px;
   }
+
   .submit {
     margin-bottom: 50px;
   }
-  /*catalogue*/
 
-  .placeholder-row_01,
-  .placeholder-row_02,
-  .placeholder-row_03 {
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 100px;
-  }
-  .placeholder-row_03 {
-    margin-left: -10px;
-  }
+  /*catalogue*/
 
   .title_placeholder-text {
     font-size: 1.5em;
@@ -996,6 +933,7 @@ i {
     margin-bottom: -50px;
     font-size: 2em;
   }
+
   .arrow-left,
   .arrow-right {
     font-size: 100px;
@@ -1010,19 +948,9 @@ i {
     font-size: 1em;
     padding-left: 20px;
     padding-right: 20px;
-    margin: 10px;
-  }
-
-  .pay_five,
-  .pay_one,
-  .pay_ten {
-    height: 150px;
-    width: 150px;
-    font-size: 1em;
-    padding-left: 20px;
-    padding-right: 20px;
     margin: 100px 5px;
   }
+
   .h1_pay {
     font-size: 4em;
     margin-bottom: 150px;
@@ -1076,6 +1004,7 @@ i {
   .h1_pay {
     font-size: 3em;
   }
+
   .pay_five,
   .pay_one,
   .pay_ten {
