@@ -476,6 +476,7 @@ label {
 /*catalogue*/
 .h1_pay {
   font-size: 7em;
+  margin-top: 100px;
 }
 .featured_movie-section {
   background-color: #f5f5f540;
@@ -713,8 +714,6 @@ i {
   }
 
   i {
-    /*HEART from https://fontawesome.com/icons/heart?style=solid*/
-
     margin-bottom: 80px;
     margin-left: 50px;
     font-size: 25px;
@@ -741,6 +740,12 @@ i {
     font-size: 1em;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .h1_pay {
+    margin: 50px;
+    margin-bottom: 100px;
+    font-size: 5em;
   }
 }
 
@@ -848,7 +853,8 @@ i {
 
   /*pay per*/
   .h1_pay {
-    font-size: 6em;
+    font-size: 5em;
+    margin-bottom: 150px;
   }
   .pay_five,
   .pay_one,
@@ -886,7 +892,7 @@ i {
   }
   .cta_sign-in,
   .cta_sign-up {
-    white-space: nowrap; /*https://developer.mozilla.org/en-US/docs/Web/CSS/white-space*/
+    white-space: nowrap;
     font-size: 1em;
     padding: 10px 30px;
     border-radius: 20px;
@@ -1017,6 +1023,10 @@ i {
     padding-right: 20px;
     margin: 100px 5px;
   }
+  .h1_pay {
+    font-size: 4em;
+    margin-bottom: 150px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -1052,8 +1062,6 @@ i {
   }
 
   i {
-    /*HEART from https://fontawesome.com/icons/heart?style=solid*/
-
     margin-bottom: 45px;
     margin-left: 30px;
     font-size: 20px;
